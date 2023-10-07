@@ -1,0 +1,9 @@
+.titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    width: 300px;
+    margin-top: 16px;
+}

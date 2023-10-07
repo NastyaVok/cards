@@ -1,0 +1,56 @@
+{
+    "env": {
+      "browser": true,
+      "es2022": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "prettier",
+      "plugin:import/recommended", 
+      "plugin:import/errors", 
+      "plugin:import/warnings"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "import"
+    ],
+    "settings": {
+      "react": {
+        "version": "999.999.999"
+      },
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "no-console": "warn",
+      "prefer-const": "warn", 
+        "quotes": ["error", "single"], 
+        "jsx-quotes": ["error", "prefer-double"],
+        "indent": ["warn", 2], 
+        "max-len": ["error", {"code": 120}], 
+        "comma-dangle": ["error", "always-multiline"], 
+        "semi": ["warn", "always"], 
+        "import/order": ["error", {
+          "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+          "newlines-between": "always-and-inside-groups"
+      }]
+    }
+  }
